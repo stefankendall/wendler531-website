@@ -1,25 +1,26 @@
-body {
-    font-family: Helvetica, Arial, Sans-Serif;
-    background: #2b2b2b;
-    color: #d9d9d9;
+html{
+    /*height: 100%;*/
 }
 
-p{
+body {
+    font-family: Helvetica, Arial, Sans-Serif;
+    color: #d9d9d9;
+    background-color: #111111;
+}
+
+p {
     margin-bottom: 0;
 }
 
-#content{
-    padding-top: 5em;
-}
-
-header h1{
+header h1 {
     padding-left: 120px;
 }
-header h1{
+
+header h1 {
     background: url(images/app-icon.png) left no-repeat;
 }
 
-h1,h2{
+h1, h2 {
     color: #d9d9d9;
     margin-bottom: 0;
 }
@@ -31,7 +32,7 @@ header h1 {
     line-height: 74px;
 }
 
-h2{
+h2 {
     font-weight: bolder;
 }
 
@@ -47,9 +48,9 @@ section p {
 
 section h2 {
     margin: 0;
+    color: white;
     font-size: 40px;
-    font-weight: normal;
-    text-shadow: 0px 0px 10px red;
+    font-weight: bold;
 }
 
 section ul {
@@ -58,16 +59,16 @@ section ul {
     text-shadow: 0px 1px 5px #000;
 }
 
-.app-store-links li{
+.app-store-links li {
     list-style-type: none;
     display: inline-block;
     padding-right: 1em;
 }
 
-#attribution-label{
+#attribution-label {
     font-weight: bolder;
 }
 
-#attribution a{
+#attribution a {
     color: #ccccff;
 }
