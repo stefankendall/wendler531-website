@@ -1,7 +1,3 @@
-html{
-    /*height: 100%;*/
-}
-
 body {
     font-family: Helvetica, Arial, Sans-Serif;
     color: #d9d9d9;
@@ -17,7 +13,7 @@ header h1 {
 }
 
 header h1 {
-    background: url(images/app-icon.png) left no-repeat;
+    background: url(../images/app-icon.png) left no-repeat;
 }
 
 h1, h2 {
@@ -26,7 +22,7 @@ h1, h2 {
 }
 
 header h1 {
-    font-size: 60px;
+    font-size: 3.5em;
     font-weight: bold;
     color: white;
     line-height: 74px;
@@ -37,24 +33,24 @@ h2 {
 }
 
 section {
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 section p {
-    font-size: 22px;
-    line-height: 35px;
+    font-size: 1.5em;
+    line-height: 1.6em;
     color: #d9d9d9;
 }
 
 section h2 {
     margin: 0;
     color: white;
-    font-size: 40px;
+    font-size: 3em;
     font-weight: bold;
 }
 
 section ul {
-    font-size: 22px;
+    font-size: 1.5em;
     line-height: 35px;
     text-shadow: 0px 1px 5px #000;
 }
