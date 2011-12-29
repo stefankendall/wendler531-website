@@ -10,15 +10,13 @@ p {
 
 header h1 {
     padding-left: 120px;
-}
-
-header h1 {
     background: url(../images/app-icon.png) left no-repeat;
 }
 
 h1, h2 {
     color: #d9d9d9;
     margin-bottom: 0;
+    font-weight: bolder;
 }
 
 header h1 {
@@ -28,31 +26,29 @@ header h1 {
     line-height: 74px;
 }
 
-h2 {
-    font-weight: bolder;
-}
-
 section {
     margin-bottom: 1.5em;
 }
 
-section p {
+p {
     font-size: 1.5em;
     line-height: 1.6em;
     color: #d9d9d9;
 }
 
-section h2 {
+h2 {
     margin: 0;
     color: white;
     font-size: 3em;
     font-weight: bold;
 }
 
-section ul {
+
+
+ul {
     font-size: 1.5em;
     line-height: 35px;
-    text-shadow: 0px 1px 5px #000;
+    margin-bottom: 0;
 }
 
 .app-store-links li {
@@ -61,10 +57,26 @@ section ul {
     padding-right: 1em;
 }
 
-#attribution-label {
-    font-weight: bolder;
+.pics img {
+    padding: 5px;
+    border: solid 2px black;
+    background-color: #eee;
+    width: 480px;
+    height: 800px;
+    top: 0;
+    left: 0;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
-#attribution a {
-    color: #ccccff;
+.donate{
+    color: #22AAff;
+}
+
+a.email{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
 }

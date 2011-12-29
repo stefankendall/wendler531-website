@@ -4,8 +4,16 @@
     <title>Wendler 5/3/1 for iPhone and Android</title>
     <link rel="stylesheet" type="text/css" href="css/blueprint/screen.css"/>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.pics').cycle('fade');
+        });
+    </script>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -13,56 +21,17 @@
     <div id="content" class="span-15">
         <header>
             <hr class="space"/>
-            <h1 class='pull-3' id="title">Wendler 5/3/1</h1>
+            <div class="span-24">
+                <h1 class='pull-3' id="title">Wendler 5/3/1</h1>
+            </div>
         </header>
 
-        <hr class="space"/>
         <section class="short-description">
             <p>Follow Jim Wendler's 5/3/1 lifting program to increase strength and lifting ability. Get the app, and get
                 lifting.</p>
         </section>
-        <section>
-            <h2>Features:</h2>
-            <ul>
-                <li>See Wendler lift numbers by week and lift!</li>
-                <li>Estimate one-rep max from known lifts!</li>
-                <li>Add new lifts, like Clean or Snatch!</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Coming Soon!</h2>
-            <ul>
-                <li>
-                    Auto-adjust maxes after a cycle (+5/+10)
-                </li>
-                <li>
-                    Tracking?
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Like the app?</h2>
 
-            <p>Buy stuff from <a href="http://www.elitefts.net/">EliteFTS</a> or pick up <a
-                    href="http://www.amazon.com/Simplest-Effective-Training-Increase-Strength/dp/0557248299">The
-                Book</a>.
-            </p>
-        </section>
-        <section>
-            <h2>This project is open-source!</h2>
-
-            <p>
-                If you want to help out, check out the <a href="https://github.com/stefankendall/Wendler-5-3-1">github
-                project here.</a>
-            </p>
-        </section>
-    </div>
-    <div class="push-2 span-7 last">
-        <hr class="space"/>
-        <img src="images/iPhone.png"/>
-    </div>
-    <footer id="footer">
-        <div class="span-19">
+        <div class="span-24">
             <ul class="app-store-links">
                 <li><a href="http://itunes.apple.com/us/app/wendler-5-3-1/id455470293"><img
                         src='images/app-store.png'/></a>
@@ -72,21 +41,59 @@
                 </li>
             </ul>
         </div>
-        <div id="attribution-label" class='span-2'>
+        <section>
+            <h2>Features:</h2>
+            <ul>
+                <li>See Wendler lift numbers by week and lift!</li>
+                <li>Estimate one-rep max from known lifts!</li>
+                <li>Add new lifts, like Clean or Snatch!</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Something missing?</h2>
+
+            <p>If you think the app can be improved in any way, let me know! I want this to be the definitive 5/3/1 app,
+                and if something
+                you need is missing, that can't happen.</p>
             <hr class="space"/>
-            <p>Author:</p>
+            <p>E-mail me at <a class='email' href="mailto:wendler531@stefankendall.com">wendler531@stefankendall.com</a>, and I <strong>will</strong> respond.</p>
+        </section>
+        <section>
+            <h2>This project is open-source!</h2>
 
-            <p>App Icon:</p>
-
-            <p>Contact:</p>
+            <p>
+                If you want to help out, check out the <a href="https://github.com/stefankendall/Wendler-5-3-1">github
+                project.</a>
+            </p>
+        </section>
+    </div>
+    <div class="push-2 span-7 last">
+        <hr class="space"/>
+        <div class="pics">
+            <img src="images/screenshots/individual-lift.png" width="480" height="800"/>
+            <img src="images/screenshots/lift-list.png" width="480" height="800"/>
+            <img src="images/screenshots/edit-maxes.png" width="480" height="800"/>
+            <img src="images/screenshots/one-rep.png" width="480" height="800"/>
+            <img src="images/screenshots/cycle-complete.png" width="480" height="800"/>
         </div>
-        <div id='attribution' class="span-3 last">
-            <hr class="space"/>
-            <p>Stefan Kendall</p>
-
-            <p>Matthew Hudgins</p>
-
-            <p><a href="mailto:wendler531@gmail.com">wendler531@stefankendall.com</a></p>
+    </div>
+    <footer id="footer">
+        <div class="span-15">
+                <h2 class="donate">Want to donate?</h2>
+                <p>
+                    The core of this app will always be free. Period. Working on this app consumes a great deal of my free time,
+                    so I humbly put out this paypal tip jar.
+                </p>
+                <hr class="space"/>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
+                           name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                         height="1">
+                </form>
         </div>
     </footer>
 </div>
